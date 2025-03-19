@@ -1,0 +1,438 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+/* Header */
+#header {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #2c3e50;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile h1 {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.profile .cons i{
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 96%);
+  height: 2.1rem;
+  width: 2.1rem;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+.profile .cons i:hover{
+  font-size: 2.4rem;
+  color: hsl(211, 92%, 33%);
+}
+
+#navbar span{
+  margin: 12px 14px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  margin: 20px 0;
+}
+
+.nav-menu ul li a {
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-menu ul li a:hover {
+  color: #1abc9c;
+}
+
+/* Hero Section */
+#hero {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(211, 92%, 33%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.hero-container h1 {
+  font-size: 48px;
+}
+
+.hero-container p {
+  font-size: 24px;
+}
+
+.hero-container .typed {
+  color: tomato;
+  font-style: italic;
+}
+
+.typed{
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/* Main */
+#main {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: #1abc9c;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-title p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Skills Section */
+.skills .progress {
+  margin-bottom: 20px;
+}
+
+.skills .progress .skill {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills .progress .progress-bar-wrap {
+  background: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skills .progress .progress-bar {
+  height: 10px;
+  background: #1abc9c;
+  border-radius: 5px;
+}
+
+
+/* Resume Section */
+.resume {
+  padding: 60px 0;
+}
+
+.resume .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.resume h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.resume h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: #1abc9c;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.resume p {
+  margin-bottom: 20px;
+}
+
+.resume h3.resume-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.resume h3.resume-title::before {
+  content: '';
+  width: 6px;
+  height: 20px;
+  background: #1abc9c;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+}
+
+.resume .resume-item {
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  border-left: 2px solid #1abc9c;
+}
+
+.resume .resume-item h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  background: #f7f7f7;
+  padding: 3px 10px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.resume .resume-item em {
+  font-style: normal;
+  font-weight: 600;
+  color: #666;
+}
+
+.resume .resume-item::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #1abc9c;
+  left: -8px;
+  top: 20px;
+}
+
+/* Contact Section */
+
+
+.row{
+  display: flex;
+  gap: 19px ;
+}
+
+.col-lg-6{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.contact .info {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.contact .info div {
+  margin-bottom: 20px;
+}
+
+.contact .info i {
+  font-size: 24px;
+  color: #1abc9c;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contact .info h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact .info p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  #header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 10px;
+  }
+
+  .profile img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile h1 {
+    font-size: 20px;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu ul li {
+    margin: 10px 0;
+  }
+
+  #hero {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .hero-container h1 {
+    font-size: 36px;
+  }
+
+  .hero-container p {
+    font-size: 18px;
+  }
+
+  .typed {
+    font-size: 1.8rem;
+  }
+
+  #main {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  .resume h2 {
+    font-size: 28px;
+  }
+
+  .resume h3.resume-title {
+    font-size: 20px;
+  }
+
+  .resume .resume-item h4 {
+    font-size: 18px;
+  }
+
+  .resume .resume-item h5 {
+    font-size: 14px;
+  }
+
+  .resume .resume-item p {
+    font-size: 12px;
+  }
+
+  .fa-xmark, .fa-bars {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu ul li a {
+    font-size: 16px;
+  }
+
+  .col-lg-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .email p{
+    font-size: 2px;
+  }
+
+  .contact .info i {
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact .info p{
+    font-size: 10px;
+  }
+
+}
+
